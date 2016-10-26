@@ -1,0 +1,134 @@
+html,body{
+  height:100vh;
+}
+body{
+  margin: 0;
+  min-height: 539px;
+}
+.bg{
+  width: 100vw;
+  height: 100vh;
+  -webkit-filter:blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1vh;
+  width: 96vw;
+  margin-left: 2vw;
+  position: absolute;
+}
+header{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #8e7070;
+  font-weight: bolder;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+}
+.content{
+  width: 80%;
+}
+.content .avatars{
+  width: 25%;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+.login-form{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.login-form li{
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+.login-form li input{
+  border: 0;
+  border-bottom: solid 1px;
+  width: 78%;
+  height: 38px;
+  line-height: normal;
+  background-color: inherit;
+}
+.login-form li label{
+  font-size: 20px;
+  width: 20%;
+  height: 38px;
+  line-height: normal;
+}
+.login-form .btn{
+  display: block;
+  width: 40%;
+  margin-left: 30%;
+  background-color: #398;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  height: 38px;
+  line-height: 38px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+footer{
+  position: absolute;
+  bottom: 10vh;
+  width: 100vw;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+footer ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+}
+footer ul li{
+  float: left;
+  height: 50px;
+  width: 33vw;
+  text-align: center;
+}
+footer ul li img{
+  width: 50px;
+  padding: 0;
+  margin: 0;
+}
+footer ul li:nth-child(1){
+  text-align: right;
+}
+footer ul li:nth-child(3){
+  text-align: left;
+}
+@media screen and (min-aspect-ratio:500/450){
+  main{
+    height: 40vh;
+    width: 100vw;
+    position: absolute;
+    margin-top: 30vh;
+  }
+  .login-form .btn{
+    margin-top: 2px;
+  }
+  footer{
+    bottom: 1vh;
+  }
+}
